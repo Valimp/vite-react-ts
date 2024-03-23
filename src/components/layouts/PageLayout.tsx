@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Navbar from '../Navbar';
+import ContentLayout from './ContentLayout';
 
 const PageLayout = ({ children }: { children: ReactNode }) => {
 
@@ -12,7 +13,9 @@ const PageLayout = ({ children }: { children: ReactNode }) => {
     return (
         <>
             <Navbar links={links} />
-            {children}
+            <ContentLayout>
+                {children}
+            </ContentLayout>
         </>
   )
 }
