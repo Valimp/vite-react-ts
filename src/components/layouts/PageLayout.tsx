@@ -11,12 +11,12 @@ const PageLayout = ({ children }: { children: ReactNode }) => {
     ]
 
     return (
-        <>
+        <div className='font-poppins'>
             <Navbar links={links} />
             <ContentLayout>
                 {children}
             </ContentLayout>
-        </>
+        </div>
   )
 }
 
