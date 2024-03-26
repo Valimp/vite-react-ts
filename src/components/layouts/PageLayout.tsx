@@ -5,9 +5,9 @@ import ContentLayout from './ContentLayout';
 const PageLayout = ({ children }: { children: ReactNode }) => {
 
     const links = [
-        { to: '/', content: 'about' },
-        { to: '/about', content: 'work' },
-        { to: '/contact', content: 'contact' },
+        { to: '/', content: 'à propos' },
+        { to: '/about', content: 'mon travail' },
+        { to: '/contact', content: 'me contacter' },
     ]
 
     return (

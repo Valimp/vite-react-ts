@@ -14,6 +14,9 @@ export default {
         default: '#9BA7C0',
       },
       transparent: 'transparent',
+      white: {
+        default: '#EDE6F2',
+      }
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
