@@ -12,6 +12,7 @@ export default {
       },
       gray: {
         default: '#9BA7C0',
+        dark: '#04151F'
       },
       transparent: 'transparent',
       white: {
