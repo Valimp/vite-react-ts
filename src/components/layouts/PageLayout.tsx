@@ -6,8 +6,8 @@ const PageLayout = ({ children }: { children: ReactNode }) => {
 
     const links = [
         { to: '/', content: 'à propos' },
-        { to: '/about', content: 'mon travail' },
-        { to: '/contact', content: 'me contacter' },
+        { to: '#about', content: 'mon travail' },
+        { to: '#contact', content: 'me contacter' },
     ]
 
     return (
