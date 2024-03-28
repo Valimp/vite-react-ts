@@ -30,9 +30,12 @@ const HomePage = () => {
       </Article>
       <Article>
         <Title>mes centres d'interêts</Title>
+        <p className='text-gray-default'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, ad amet placeat quasi rem alias rerum suscipit doloremque, earum porro voluptatum cupiditate nemo temporibus libero vero eius? Libero, mollitia dignissimos.</p>
+        <p className='text-gray-default'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, at.</p>
       </Article>
       <Article id="work">
         <Title>mon travail</Title>
+        
       </Article>
       <Article id="contact">
         <Title>me contacter</Title>
