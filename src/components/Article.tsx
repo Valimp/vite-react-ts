@@ -1,6 +1,11 @@
 import { ReactNode } from "react"
 
-const Article = ({children, id}: {children: ReactNode, id?: string}) => {
+interface ArticleProps {
+  children: ReactNode
+  id?: string
+}
+
+const Article = ({children, id}: ArticleProps) => {
   return (
     <article id={id} className='group hover:cursor-default'>
       {children}
