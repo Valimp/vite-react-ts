@@ -1,6 +1,10 @@
 import { ReactNode } from 'react'
 
-const Title = ({children}: { children: ReactNode }) => {
+interface TitleProps {
+  children: ReactNode
+}
+
+const Title = ({children}: TitleProps) => {
   return (
     <h3 className="font-extrabold text-2xl my-5 inline-block text-gray-dark">
         {children}
