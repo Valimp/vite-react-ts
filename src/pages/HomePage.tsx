@@ -20,12 +20,12 @@ const HomePage = () => {
       <Article>
         <Title>stack technique</Title>     
         <div className='flex gap-3'>
-          <Image src='/typescript.svg'/>
-          <Image src='/react.svg' />
-          <Image src='/tailwindcss.svg' />
-          <Image src='/nodejs.svg' />
-          <Image src='/mongodb.svg' />
-          <Image src='/postgresql.svg' />
+          <Image src='/typescript.svg' alt="typescript" width="50" height="50"/>
+          <Image src='/react.svg' alt="react" width="50" height="50"/>
+          <Image src='/tailwindcss.svg' alt="tailwindcss" width="50" height="50"/>
+          <Image src='/nodejs.svg' alt="nodejs" width="50" height="50"/>
+          <Image src='/mongodb.svg' alt="mongodb" width="50" height="50"/>
+          <Image src='/postgresql.svg' alt="postgresql" width="50" height="50"/>
         </div>
       </Article>
       <Article>
