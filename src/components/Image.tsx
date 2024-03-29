@@ -1,8 +1,17 @@
-const Image = (props: {src: string}) => {
+interface ImageProps {
+  src: string
+  alt: string
+  width: string
+  height: string
+}
+
+const Image = ({ src, alt, width, height }: ImageProps) => {
   return (
-    <div className="w-12 h-12 rounded-xl bg-gray-light flex justify-center items-center">
-        <img src={props.src} className='w-10 h-10 rounded'/>
-    </div>
+    <img
+      src={src}
+      alt={alt}
+      style={{ width: `${width}px`, height: `${height}px` }}
+    />
   )
 }
 
