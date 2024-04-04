@@ -7,7 +7,7 @@ interface ArticleProps {
 
 const Article = ({children, id}: ArticleProps) => {
   return (
-    <article id={id} className='group hover:cursor-default'>
+    <article id={id} className='group hover:cursor-default mb-24'>
       {children}
     </article>
   )
