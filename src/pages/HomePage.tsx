@@ -2,6 +2,11 @@ import Article from '../components/Article'
 import Title from '../components/Title'
 import Image from '../components/Image'
 import Card from '../components/Card'
+import Badge from '../components/Badge'
+
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 const HomePage = () => {
   return (
@@ -31,8 +36,8 @@ const HomePage = () => {
       </Article>
       <Article>
         <Title>mes centres d'interêts</Title>
-        <p className='text-gray-default'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, ad amet placeat quasi rem alias rerum suscipit doloremque, earum porro voluptatum cupiditate nemo temporibus libero vero eius? Libero, mollitia dignissimos.</p>
-        <p className='text-gray-default'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, at.</p>
+        <p className='text-gray-default'>Pendant mon temps libre, je me consacre au tennis, à la moto, et aux jeux de société.</p>
+        <p className='text-gray-default'> Ces hobbies égayent ma vie quotidienne, me procurant des sensations fortes et des moments de convivialité.</p>
       </Article>
       <Article id="work">
         <Title>mon travail</Title>
@@ -56,6 +61,17 @@ const HomePage = () => {
       </Article>
       <Article id="contact">
         <Title>me contacter</Title>
+        <div className='flex gap-10'>
+          <Badge url='https://www.linkedin.com/in/valimp/'>
+            <FaLinkedin size={40} className='text-gray-default hover:text-gray-default/70' />
+          </Badge>
+          <Badge url='https://github.com/Valimp'>
+            <FaGithub size={40} className='text-gray-default hover:text-gray-default/70' />
+          </Badge>
+          <Badge email='valentinchauvet.contact@gmail.com'>
+            <IoIosMail size={40} className='text-gray-default hover:text-gray-default/70' />
+          </Badge>
+        </div>
       </Article>
     </>
   )
