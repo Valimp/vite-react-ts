@@ -7,11 +7,13 @@ interface ImageProps {
 
 const Image = ({ src, alt, width, height }: ImageProps) => {
   return (
-    <img
+    <div className="self-center">
+      <img
       src={src}
       alt={alt}
-      style={{ width: `${width}px`, height: `${height}px` }}
-    />
+      style={{ width: `${width}px`, height: `${height}px`, borderRadius: '10px'}}
+      />
+    </div>
   )
 }
 

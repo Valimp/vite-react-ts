@@ -1,6 +1,7 @@
 import Article from '../components/Article'
 import Title from '../components/Title'
 import Image from '../components/Image'
+import Card from '../components/Card'
 
 const HomePage = () => {
   return (
@@ -35,7 +36,23 @@ const HomePage = () => {
       </Article>
       <Article id="work">
         <Title>mon travail</Title>
-        
+        <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
+          <Card url='https://github.com/Valimp/vite-react-ts'>
+            <Image src='/project1.jpg' alt="project1" width="400" height="250" />
+            <h3 className='text-gray-dark mt-3 text-xl font-bold'>Mon portfolio</h3>
+            <p className='text-gray-default mt-2'>Vous y êtes ! Il est beau n'est ce pas ? Restez autant que vous le voudrez.</p>
+          </Card>
+          <Card url='https://github.com/openfoodfacts/nutripatrol-frontend'>
+            <Image src='/project2.jpg' alt="project2" width="400" height="250" />
+            <h3 className='text-gray-dark mt-3 text-xl font-bold'>L'interface Nutripatrol</h3>
+            <p className='text-gray-default mt-2'>Une interface de moderation de tickets. Et opensource s'il vous plait !</p>
+          </Card>
+          <Card url='https://github.com/openfoodfacts/nutripatrol'>
+            <Image src='/project3.jpg' alt="project3" width="400" height="250"/>
+            <h3 className='text-gray-dark mt-3 text-xl font-bold'>L' API Nutripatrol</h3>
+            <p className='text-gray-default mt-2'>J'avais dis développeur fullstack, alors je développe aussi des APIs.</p>
+          </Card>
+        </div>
       </Article>
       <Article id="contact">
         <Title>me contacter</Title>
