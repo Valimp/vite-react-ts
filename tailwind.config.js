@@ -11,13 +11,13 @@ export default {
         dark: '#15803D',
       },
       gray: {
-        light: '#D8DFE9',
-        default: '#9BA7C0',
-        dark: '#04151F'
+        light: '#EAEBEA',
+        default: '#727372',
+        dark: '#191919'
       },
       transparent: 'transparent',
       white: {
-        default: '#EDE6F2',
+        default: '#F4F5F4',
       }
     },
     fontFamily: {
