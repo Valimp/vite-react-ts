@@ -75,7 +75,7 @@ const HomePage = () => {
           <Card url='https://github.com/openfoodfacts/nutripatrol'>
             <Image src='/project3.jpg' alt="project3" width="400" height="250"/>
             <h3 className='text-gray-dark dark:text-gray-light mt-3 text-xl font-bold'>L' API Nutripatrol</h3>
-            <p className='text-gray-default mt-2'>J'avais dis développeur fullstack, alors je développe aussi des APIs.</p>
+            <p className='text-gray-default mt-2'>J'avais dit développeur fullstack, alors je développe aussi des APIs.</p>
           </Card>
         </div>
       </Article>
