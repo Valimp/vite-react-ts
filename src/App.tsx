@@ -6,7 +6,7 @@ function App() {
   return (
     <PageLayout>
       <Routes>
-        <Route path='/' element={<Homepage/>} />
+        <Route path='/vite-react-ts/' element={<Homepage/>} />
       </Routes>
     </PageLayout>
   )
