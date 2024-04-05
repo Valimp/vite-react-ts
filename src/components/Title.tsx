@@ -6,7 +6,7 @@ interface TitleProps {
 
 const Title = ({children}: TitleProps) => {
   return (
-    <h3 className="font-extrabold text-2xl my-5 inline-block text-gray-dark mb-6">
+    <h3 className="font-extrabold text-2xl my-5 inline-block text-gray-dark dark:text-gray-light mb-6">
         {children}
         <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-gradient-to-r from-green-default to-green-dark rounded"></span>
     </h3>

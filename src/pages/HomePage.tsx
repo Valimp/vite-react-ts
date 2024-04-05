@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import Article from '../components/Article'
 import Title from '../components/Title'
 import Image from '../components/Image'
@@ -7,13 +9,31 @@ import Badge from '../components/Badge'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import { IoIosSunny } from "react-icons/io";
+import { IoMdMoon } from "react-icons/io";
 
 const HomePage = () => {
+
+  const [darkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    const html = document.documentElement;
+    html.classList.toggle('dark');
+    setDarkMode(!darkMode)
+  }
+
   return (
-    <>
+    <div className={`${darkMode ? "dark" : "light"}`}>
+      <button onClick={toggleDarkMode} className={`hover:animate-spin-slow fixed bottom-5 right-5 p-1 border-[1.5px] rounded-full ${darkMode ? "border-white-default" : "border-gray-dark"}`}>
+        { darkMode ? 
+          <IoIosSunny size={25} className='text-white-default'/>
+          :
+          <IoMdMoon size={25} className='text-gray-dark'/>
+        }
+      </button>
       <div className="w-full h-[250px] self-center bg-cover bg-center" style={{ backgroundImage: "url(/forest.jpg)" }}></div>
       <span className="sm:text-4xl text-2xl mt-8 text-gray-default">Bonjour ! Je suis</span>
-      <h2 className="sm:text-5xl text-3xl mt-8 font-extrabold text-gray-dark">Valentin Chauvet</h2>
+      <h2 className="sm:text-5xl text-3xl mt-8 font-extrabold text-gray-dark dark:text-gray-light">Valentin Chauvet</h2>
       <h3 className="sm:text-4xl text-2xl mt-8 font-black bg-gradient-to-r from-green-default to-green-dark inline-block bg-clip-text text-transparent">un développeur web éco-responsable</h3>
       <img className="self-center mt-10" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Light%20Skin%20Tone.png" alt="Man Technologist Light Skin Tone" width="175" height="175" />
       <Article id="about">
@@ -44,17 +64,17 @@ const HomePage = () => {
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
           <Card url='https://github.com/Valimp/vite-react-ts'>
             <Image src='/project1.jpg' alt="project1" width="400" height="250" />
-            <h3 className='text-gray-dark mt-3 text-xl font-bold'>Mon portfolio</h3>
+            <h3 className='text-gray-dark dark:text-gray-light mt-3 text-xl font-bold'>Mon portfolio</h3>
             <p className='text-gray-default mt-2'>Vous y êtes ! Il est beau n'est ce pas ? Restez autant que vous le voudrez.</p>
           </Card>
           <Card url='https://github.com/openfoodfacts/nutripatrol-frontend'>
             <Image src='/project2.jpg' alt="project2" width="400" height="250" />
-            <h3 className='text-gray-dark mt-3 text-xl font-bold'>L'interface Nutripatrol</h3>
+            <h3 className='text-gray-dark dark:text-gray-light mt-3 text-xl font-bold'>L'interface Nutripatrol</h3>
             <p className='text-gray-default mt-2'>Une interface de moderation de tickets. Et opensource s'il vous plait !</p>
           </Card>
           <Card url='https://github.com/openfoodfacts/nutripatrol'>
             <Image src='/project3.jpg' alt="project3" width="400" height="250"/>
-            <h3 className='text-gray-dark mt-3 text-xl font-bold'>L' API Nutripatrol</h3>
+            <h3 className='text-gray-dark dark:text-gray-light mt-3 text-xl font-bold'>L' API Nutripatrol</h3>
             <p className='text-gray-default mt-2'>J'avais dis développeur fullstack, alors je développe aussi des APIs.</p>
           </Card>
         </div>
@@ -73,7 +93,7 @@ const HomePage = () => {
           </Badge>
         </div>
       </Article>
-    </>
+    </div>
   )
 }
 
