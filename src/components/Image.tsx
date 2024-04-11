@@ -12,6 +12,7 @@ const Image = ({ src, alt, width, height }: ImageProps) => {
       src={src}
       alt={alt}
       style={{ width: `${width}px`, height: `${height}px`, borderRadius: '10px'}}
+      className="object-cover"
       />
     </div>
   )
