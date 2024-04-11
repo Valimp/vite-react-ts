@@ -63,17 +63,17 @@ const HomePage = () => {
         <Title>mon travail</Title>
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
           <Card url='https://github.com/Valimp/vite-react-ts'>
-            <Image src='/vite-react-ts/project1.jpg' alt="project1" width="400" height="250" />
+            <Image src='/vite-react-ts/project1.jpg' alt="project1" width="400" height="250"  isResponsive={true}/>
             <h3 className='text-gray-dark dark:text-gray-light mt-3 text-xl font-bold'>Mon portfolio</h3>
             <p className='text-gray-default mt-2'>Vous y êtes ! Il est beau n'est ce pas ? Restez autant que vous le voudrez.</p>
           </Card>
           <Card url='https://github.com/openfoodfacts/nutripatrol-frontend'>
-            <Image src='/vite-react-ts/project2.jpg' alt="project2" width="400" height="250" />
+            <Image src='/vite-react-ts/project2.jpg' alt="project2" width="400" height="250"  isResponsive={true}/>
             <h3 className='text-gray-dark dark:text-gray-light mt-3 text-xl font-bold'>L'interface Nutripatrol</h3>
             <p className='text-gray-default mt-2'>Une interface de moderation de tickets. Et opensource s'il vous plait !</p>
           </Card>
           <Card url='https://github.com/openfoodfacts/nutripatrol'>
-            <Image src='/vite-react-ts/project3.jpg' alt="project3" width="400" height="250"/>
+            <Image src='/vite-react-ts/project3.jpg' alt="project3" width="400" height="250" isResponsive={true} />
             <h3 className='text-gray-dark dark:text-gray-light mt-3 text-xl font-bold'>L' API Nutripatrol</h3>
             <p className='text-gray-default mt-2'>J'avais dit développeur fullstack, alors je développe aussi des APIs.</p>
           </Card>

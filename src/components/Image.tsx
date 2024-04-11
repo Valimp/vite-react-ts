@@ -3,16 +3,17 @@ interface ImageProps {
   alt: string
   width: string
   height: string
+  isResponsive?: boolean
 }
 
-const Image = ({ src, alt, width, height }: ImageProps) => {
+const Image = ({ src, alt, width, height, isResponsive }: ImageProps) => {
   return (
     <div className="self-center">
       <img
       src={src}
       alt={alt}
       style={{ width: `${width}px`, height: `${height}px`, borderRadius: '10px'}}
-      className="object-cover"
+      className={ isResponsive ? 'object-cover' : ''}
       />
     </div>
   )
